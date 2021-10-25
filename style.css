@@ -1,35 +1,87 @@
-.page{
-
-    width: 500px;
-    margin-top: 4%;
+.blockVisible{
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
     
+   
 }
 
-.dracaufeuHeader{
+.pikachuVisible{
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    background-color: lightgray;
     
-    background-color:rgb(29, 123, 245);
-    color: white;
+
 }
 
-.dracaufeuHeader, .main, .pikachu{
-    border: 1px solid gray;
-}
-
-.pikachu{
+.pikachuNonvisible{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
     background-color: lightgray;
 }
 
-.descriptionDracaufeu{
+#test{
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#drago{
+    background-color: rgb(0, 110, 255);
+    color: white;
     
 }
 
-.arrow{
-    margin-right: 10px;
+.lorem{
+    background-color: rgb(0, 110, 255);
+    color: rgb(0, 110, 255);
 }
 
-@media screen and (max-width: 767px){
-    .descriptionDracaufeu{
-        display: flex;
-        justify-content: center;
+.description{
+    height: 225px;
+}
+
+.im{
+    height: 15px;
+    width: 15px;
+    cursor: pointer;
+}
+
+.hide2{
+border-right: none;
+}
+
+.hide{
+    visibility: hidden;
+}
+
+.voir{
+    visibility: visible;
+}
+
+#drag{
+    
+    margin-left: 10px;
+    margin-top: 15px;
+}
+
+#pik{
+    margin-top: 15px;
+}
+.description{
+    display: none;
+}
+
+@media screen and (max-width: 500px){
+    .description{
+        display: block;
+        height: 50px;
+    }
+    #test, .pikachuNonvisible{
+        display: none;
     }
 }
